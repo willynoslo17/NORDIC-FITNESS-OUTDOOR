@@ -1,6 +1,5 @@
 const BASE = "https://api.printify.com/v1";
 
-// Per-store curated catalog — PRIMARY source for storefront (never replace with shared shop dump)
 const SELECTED: any[] = [
   {
     "id": "printify-fitness-1",
@@ -226,6 +225,156 @@ const SELECTED: any[] = [
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
     "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-16",
+    "sku": "PFY-FIT-HOODIE-ALT",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Altitude Club Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-17",
+    "sku": "PFY-FIT-TEE-MORNING",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Morning Miles Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-18",
+    "sku": "PFY-FIT-CREW-COLD",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Cold Air Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-19",
+    "sku": "PFY-FIT-HOODIE-PEAK",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Peak Season Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 55.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-20",
+    "sku": "PFY-FIT-TEE-SWEAT",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Sweat Equity Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.5,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-21",
+    "sku": "PFY-FIT-CREW-RIDGE",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Ridge Line Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 47.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-22",
+    "sku": "PFY-FIT-HOODIE-CROSS",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Cross Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 52.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-23",
+    "sku": "PFY-FIT-TEE-PACE",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Push Pace Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.5,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-24",
+    "sku": "PFY-FIT-CREW-FOREST",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Forest Loop Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 45.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printify-fitness-25",
+    "sku": "PFY-FIT-TEE-LASTREP",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Last Rep Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 29.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
   }
 ];
 
@@ -310,18 +459,11 @@ async function enrichFromLive(token: string, shopId: string, curatedProducts: an
     const result: any = await response.json();
     const list = Array.isArray(result?.data) ? result.data : Array.isArray(result) ? result : [];
     if (!list.length) return curatedProducts;
-
     const typeWords: Record<string, string[]> = {
-      tote: ["tote", "bag"],
-      tee: ["t-shirt", "tshirt", "tee", "shirt"],
-      mug: ["mug", "cup", "coffee"],
-      crewneck: ["crewneck", "crew neck", "sweatshirt"],
-      hoodie: ["hoodie", "zip"],
-      poster: ["poster", "print"],
-      case: ["case", "phone", "tough"],
-      cap: ["cap", "hat"],
+      tote: ["tote", "bag"], tee: ["t-shirt", "tshirt", "tee", "shirt"], mug: ["mug", "cup", "coffee"],
+      crewneck: ["crewneck", "crew neck", "sweatshirt"], hoodie: ["hoodie", "zip"],
+      poster: ["poster", "print"], case: ["case", "phone", "tough"], cap: ["cap", "hat"],
     };
-
     return curatedProducts.map((item) => {
       const words = typeWords[String(item.matchType || "").toLowerCase()] || [];
       const match = list.find((live: any) => {
@@ -360,30 +502,15 @@ export default async (req: Request, context: any) => {
   const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
   const defaultSector = String(SELECTED[0]?.sector || "beauty");
   const sector = resolveSector(wanted || defaultSector);
-  const headers = {
-    "access-control-allow-origin": "*",
-    "cache-control": "public, max-age=60",
-  };
-
-  // PRIMARY: curated per-store list. Live Printify only enriches — never replaces.
+  const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
   let products = curated(sector).slice(0, 30);
   const token = (typeof Netlify !== "undefined" && Netlify.env?.get) ? Netlify.env.get("PRINTIFY_API_TOKEN") : context?.env?.PRINTIFY_API_TOKEN;
   const shopId = ((typeof Netlify !== "undefined" && Netlify.env?.get) ? Netlify.env.get("PRINTIFY_SHOP_ID") : context?.env?.PRINTIFY_SHOP_ID) || "28847802";
   if (token && products.length) {
     products = await enrichFromLive(String(token), String(shopId), products);
   }
-
   return Response.json(
-    {
-      ok: true,
-      supplier: "printify",
-      sector,
-      query: sector,
-      products,
-      count: products.length,
-      source: "printify-selected-primary",
-      markets: ["NO", "EU", "PE"],
-    },
+    { ok: true, supplier: "printify", sector, query: sector, products, count: products.length, source: "printify-selected-primary", markets: ["NO", "EU", "PE"] },
     { status: products.length ? 200 : 503, headers }
   );
 };

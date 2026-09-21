@@ -12,7 +12,8 @@
     "suggestedRetailUsd": 49.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-2",
@@ -27,7 +28,8 @@
     "suggestedRetailUsd": 52.9,
     "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-3",
@@ -42,7 +44,8 @@
     "suggestedRetailUsd": 51.5,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-4",
@@ -57,7 +60,8 @@
     "suggestedRetailUsd": 29.9,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-5",
@@ -72,7 +76,8 @@
     "suggestedRetailUsd": 28.5,
     "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-6",
@@ -87,7 +92,8 @@
     "suggestedRetailUsd": 27.9,
     "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-7",
@@ -102,7 +108,8 @@
     "suggestedRetailUsd": 44.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-8",
@@ -117,7 +124,8 @@
     "suggestedRetailUsd": 46.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-9",
@@ -132,7 +140,8 @@
     "suggestedRetailUsd": 26.9,
     "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-10",
@@ -147,7 +156,8 @@
     "suggestedRetailUsd": 54.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-11",
@@ -162,7 +172,8 @@
     "suggestedRetailUsd": 43.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-12",
@@ -177,7 +188,8 @@
     "suggestedRetailUsd": 25.9,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-13",
@@ -192,7 +204,8 @@
     "suggestedRetailUsd": 53.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-14",
@@ -207,7 +220,8 @@
     "suggestedRetailUsd": 27.5,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
   },
   {
     "id": "printful-fitness-15",
@@ -222,6 +236,257 @@
     "suggestedRetailUsd": 45.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "printifyShopId": "28847802"
+  },
+  {
+    "id": "printful-fitness-16",
+    "sku": "PFL-FIT-HOODIE-ALT",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "hoodie",
+    "matchTypes": [
+      "hoodie",
+      "tee",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Altitude Club Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.5,
+    "priceNOK": 616,
+    "priceEUR": 54.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-17",
+    "sku": "PFL-FIT-TEE-MORNING",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "tee",
+    "matchTypes": [
+      "tee",
+      "hoodie",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Morning Miles Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.5,
+    "priceNOK": 322,
+    "priceEUR": 28.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-18",
+    "sku": "PFL-FIT-CREW-COLD",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "crewneck",
+    "matchTypes": [
+      "crewneck",
+      "hoodie",
+      "tee"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Cold Air Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.5,
+    "priceNOK": 525,
+    "priceEUR": 46.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-19",
+    "sku": "PFL-FIT-HOODIE-PEAK",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "hoodie",
+    "matchTypes": [
+      "hoodie",
+      "tee",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Peak Season Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 55.9,
+    "priceNOK": 632,
+    "priceEUR": 55.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-20",
+    "sku": "PFL-FIT-TEE-SWEAT",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "tee",
+    "matchTypes": [
+      "tee",
+      "hoodie",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Sweat Equity Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.5,
+    "priceNOK": 311,
+    "priceEUR": 27.5,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-21",
+    "sku": "PFL-FIT-CREW-RIDGE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "crewneck",
+    "matchTypes": [
+      "crewneck",
+      "hoodie",
+      "tee"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Ridge Line Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 47.9,
+    "priceNOK": 541,
+    "priceEUR": 47.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-22",
+    "sku": "PFL-FIT-HOODIE-CROSS",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "hoodie",
+    "matchTypes": [
+      "hoodie",
+      "tee",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Cross Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 52.9,
+    "priceNOK": 598,
+    "priceEUR": 52.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-23",
+    "sku": "PFL-FIT-TEE-PACE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "tee",
+    "matchTypes": [
+      "tee",
+      "hoodie",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Push Pace Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.5,
+    "priceNOK": 299,
+    "priceEUR": 26.5,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-24",
+    "sku": "PFL-FIT-CREW-FOREST",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "crewneck",
+    "matchTypes": [
+      "crewneck",
+      "hoodie",
+      "tee"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Forest Loop Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 45.5,
+    "priceNOK": 514,
+    "priceEUR": 45.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
+  },
+  {
+    "id": "printful-fitness-25",
+    "sku": "PFL-FIT-TEE-LASTREP",
+    "supplier": "Printful",
+    "provider": "printful",
+    "sector": "fitness",
+    "matchType": "tee",
+    "matchTypes": [
+      "tee",
+      "hoodie",
+      "crewneck"
+    ],
+    "printifyShopId": "28847802",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Last Rep Soft Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 29.5,
+    "priceNOK": 333,
+    "priceEUR": 29.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "status": "sector-selected-curated",
+    "notes": "Sector fitness curated Printify-facing item."
   }
 ]
