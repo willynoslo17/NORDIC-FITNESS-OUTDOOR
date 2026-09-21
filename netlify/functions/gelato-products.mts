@@ -1,875 +1,239 @@
-const SELECTED: any[] = [
-  {
-    "id": "gelato-fitness-1",
-    "sku": "GEL-FIT-HOODIE-OUTDOOR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Outdoor Club Zip Hoodie",
-    "category": "Apparel",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 49.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-2",
-    "sku": "GEL-FIT-HOODIE-TRAIL",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Trail Ready Zip Hoodie",
-    "category": "Apparel",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 52.9,
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-3",
-    "sku": "GEL-FIT-HOODIE-PR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "PR Mode Zip Hoodie",
-    "category": "Training",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 51.5,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-4",
-    "sku": "GEL-FIT-TEE-TRAIL",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Trail Ready Unisex Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 29.9,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-5",
-    "sku": "GEL-FIT-TEE-LEGS",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Never Skip Leg Day Tee",
-    "category": "Training",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 28.5,
-    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-6",
-    "sku": "GEL-FIT-TEE-FJELL",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Fjell Runner Soft Tee",
-    "category": "Outdoor",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 27.9,
-    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-7",
-    "sku": "GEL-FIT-CREW-SUNRISE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Sunrise Session Crewneck",
-    "category": "Apparel",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 44.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-8",
-    "sku": "GEL-FIT-CREW-MILES",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Nordic Miles Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 46.9,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-9",
-    "sku": "GEL-FIT-TEE-PLUNGE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Cold Plunge Club Tee",
-    "category": "Training",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 26.9,
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-10",
-    "sku": "GEL-FIT-HOODIE-SUMMIT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Summit Seekers Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 54.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-11",
-    "sku": "GEL-FIT-CREW-RECOVERY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Recovery Day Crewneck",
-    "category": "Training",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 43.9,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-12",
-    "sku": "GEL-FIT-TEE-HYDRATE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Hydrate & Elevate Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 25.9,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-13",
-    "sku": "GEL-FIT-HOODIE-BASE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Base Camp Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 53.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-14",
-    "sku": "GEL-FIT-TEE-TEMPO",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Tempo Run Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 27.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-15",
-    "sku": "GEL-FIT-CREW-FJORD",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Fjord Miles Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 45.9,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-16",
-    "sku": "GEL-FIT-HOODIE-ALT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Altitude Club Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 54.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-17",
-    "sku": "GEL-FIT-TEE-MORNING",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Morning Miles Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 28.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-18",
-    "sku": "GEL-FIT-CREW-COLD",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Cold Air Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 46.5,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-19",
-    "sku": "GEL-FIT-HOODIE-PEAK",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Peak Season Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 55.9,
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-20",
-    "sku": "GEL-FIT-TEE-SWEAT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Sweat Equity Soft Tee",
-    "category": "Training",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 27.5,
-    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-21",
-    "sku": "GEL-FIT-CREW-RIDGE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Ridge Line Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 47.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-22",
-    "sku": "GEL-FIT-HOODIE-CROSS",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Nordic Cross Zip Hoodie",
-    "category": "Apparel",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 52.9,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-23",
-    "sku": "GEL-FIT-TEE-PACE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Push Pace Soft Tee",
-    "category": "Training",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 26.5,
-    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-24",
-    "sku": "GEL-FIT-CREW-FOREST",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Forest Loop Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 45.5,
-    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-25",
-    "sku": "GEL-FIT-TEE-LASTREP",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Last Rep Soft Tee",
-    "category": "Training",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 29.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch"
-  },
-  {
-    "id": "gelato-fitness-26",
-    "sku": "GEL-FIT-HOODIE-SUMMIT2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Summit Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 54.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-27",
-    "sku": "GEL-FIT-TEE-STEADY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Steady Pace Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 28.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-28",
-    "sku": "GEL-FIT-CREW-DAWN",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Dawn Trail Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 46.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-29",
-    "sku": "GEL-FIT-HOODIE-RIDGE2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Ridge Soft Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 55.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-30",
-    "sku": "GEL-FIT-TEE-MOVE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Move Soft Daily Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 27.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-31",
-    "sku": "GEL-FIT-CREW-LAKE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Lake Loop Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 47.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-32",
-    "sku": "GEL-FIT-HOODIE-WIND",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Wind Soft Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 53.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-33",
-    "sku": "GEL-FIT-TEE-EASY",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Easy Miles Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 26.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-34",
-    "sku": "GEL-FIT-CREW-TERRAIN",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Terrain Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 45.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-35",
-    "sku": "GEL-FIT-HOODIE-PATH",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Nordic Path Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 56.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-36",
-    "sku": "GEL-FIT-TEE-FRESH",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Fresh Air Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 29.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-37",
-    "sku": "GEL-FIT-CREW-CABIN",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Cabin Run Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 48.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-38",
-    "sku": "GEL-FIT-HOODIE-CLIMB",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Climb Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 52.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-39",
-    "sku": "GEL-FIT-TEE-WALK",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Long Walk Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 25.5,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-40",
-    "sku": "GEL-FIT-CREW-MIST",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Mist Morning Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 44.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-41",
-    "sku": "GEL-FIT-HOODIE-TRAILSOFT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Trail Soft Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 57.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-42",
-    "sku": "GEL-FIT-TEE-STRONG",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Strong Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 28.9,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-43",
-    "sku": "GEL-FIT-CREW-PINE",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Pine Ridge Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 49.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-44",
-    "sku": "GEL-FIT-HOODIE-OPEN",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Open Road Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 54.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-45",
-    "sku": "GEL-FIT-TEE-PROGRESS",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Progress Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 27.9,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-46",
-    "sku": "GEL-FIT-CREW-HARBOR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Harbor Run Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 46.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-47",
-    "sku": "GEL-FIT-HOODIE-ASCENT",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Ascent Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 55.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-48",
-    "sku": "GEL-FIT-TEE-CLEAR",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Clear Day Soft Tee",
-    "category": "Apparel",
-    "supplierPriceUsd": 9.4,
-    "suggestedRetailUsd": 26.9,
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    "matchType": "tee",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-49",
-    "sku": "GEL-FIT-CREW-HORIZON",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Soft Horizon Crewneck",
-    "category": "Outdoor",
-    "supplierPriceUsd": 16.5,
-    "suggestedRetailUsd": 47.9,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "crewneck",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  },
-  {
-    "id": "gelato-fitness-50",
-    "sku": "GEL-FIT-HOODIE-MILES2",
-    "supplier": "Gelato",
-    "provider": "gelato",
-    "printifyProductId": "",
-    "printifyVariantId": "",
-    "name": "Nordic Miles Zip Hoodie",
-    "category": "Outdoor",
-    "supplierPriceUsd": 18.5,
-    "suggestedRetailUsd": 58.5,
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    "matchType": "hoodie",
-    "sector": "fitness",
-    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
-  }
-];
+const PRODUCT_BASE = "https://product.gelatoapis.com";
+const ECOM_BASE = "https://ecommerce.gelatoapis.com";
+
 const SECTOR_ALIASES: Record<string, string> = {
-  "beauty": "beauty",
-  "perfume": "beauty",
-  "perfumes": "beauty",
-  "skincare": "beauty",
-  "toys": "toys",
-  "kids": "toys",
-  "kid": "toys",
-  "children": "toys",
-  "electronics": "electronics",
-  "tech": "electronics",
-  "technology": "electronics",
-  "pet supplies": "pet supplies",
-  "pets": "pet supplies",
-  "pet": "pet supplies",
-  "home living": "home living",
-  "home": "home living",
-  "living": "home living",
-  "fitness": "fitness",
-  "outdoor": "fitness",
-  "sports": "fitness",
-  "solar energy": "solar energy",
-  "energy": "solar energy",
-  "solar": "solar energy",
-  "car accessories": "car accessories",
-  "car": "car accessories",
-  "auto": "car accessories",
-  "automotive": "car accessories"
+  beauty: "beauty", perfume: "beauty", perfumes: "beauty", skincare: "beauty",
+  toys: "toys", kids: "toys", kid: "toys", children: "toys",
+  electronics: "electronics", tech: "electronics", technology: "electronics",
+  "pet supplies": "pet supplies", pets: "pet supplies", pet: "pet supplies",
+  "home living": "home living", home: "home living", living: "home living",
+  fitness: "fitness", outdoor: "fitness", sports: "fitness",
+  "solar energy": "solar energy", energy: "solar energy", solar: "solar energy",
+  "car accessories": "car accessories", car: "car accessories", auto: "car accessories", automotive: "car accessories",
 };
+
+/** Preferred Gelato catalog UIDs per sector (POD merch). Unknown UIDs are skipped. */
+const SECTOR_CATALOGS: Record<string, string[]> = {
+  beauty: ["apparel", "tote-bags", "mugs", "posters", "canvas"],
+  toys: ["posters", "apparel", "canvas", "cards"],
+  electronics: ["phone-cases", "apparel", "mugs", "posters"],
+  "pet supplies": ["apparel", "tote-bags", "mugs", "posters"],
+  "home living": ["posters", "canvas", "mugs", "tote-bags", "apparel", "pillows"],
+  fitness: ["apparel", "tote-bags", "posters", "mugs"],
+  "solar energy": ["posters", "tote-bags", "apparel", "canvas"],
+  "car accessories": ["apparel", "tote-bags", "posters", "mugs"],
+};
+
+const FALLBACK_CATALOGS = ["posters", "apparel", "mugs", "canvas", "cards", "tote-bags", "phone-cases", "pillows", "calendars", "framed-posters"];
+
 function money(value: unknown) {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
+
 function resolveSector(raw: string) {
   const key = String(raw || "").toLowerCase().trim();
-  if (!key) return SELECTED[0]?.sector || "beauty";
+  if (!key) return "beauty";
   if (SECTOR_ALIASES[key]) return SECTOR_ALIASES[key];
   for (const [alias, sector] of Object.entries(SECTOR_ALIASES)) {
     if (key.includes(alias) || alias.includes(key)) return sector;
   }
-  return key;
+  return SECTOR_CATALOGS[key] ? key : "beauty";
 }
-function curated(sector: string) {
-  return SELECTED
-    .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
-    .map((p, i) => ({
-      id: String(p.id || `gelato-selected-${i}`),
-      sku: String(p.sku || ""),
-      supplier: "Gelato",
-      provider: "gelato",
-      name: String(p.name || "Gelato product"),
-      category: String(p.category || sector),
-      supplierPriceUsd: money(p.supplierPriceUsd) || money(p.suggestedRetailUsd),
-      suggestedRetailUsd: money(p.suggestedRetailUsd) || money(p.supplierPriceUsd),
-      image: String(p.image || ""),
-      sector: String(p.sector || sector),
-    }))
-    .filter((p) => p.suggestedRetailUsd > 0 && p.name);
+
+function prettyTitle(productUid: string, catalogUid: string, product: any) {
+  if (product?.title) return String(product.title);
+  if (product?.name) return String(product.name);
+  const bits = String(productUid || "").split("_").filter(Boolean);
+  const human = bits
+    .slice(0, 6)
+    .map((b) => b.replace(/-/g, " "))
+    .join(" · ");
+  const cat = String(catalogUid || "Gelato").replace(/-/g, " ");
+  return human ? `${cat}: ${human}` : `Gelato ${cat} product`;
 }
-export default async (req: Request, context: any) => {
-  if (req.method !== "GET") return Response.json({ error: "Method not allowed" }, { status: 405 });
-  const url = new URL(req.url);
-  const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
-  const defaultSector = String(SELECTED[0]?.sector || "beauty");
-  const sector = resolveSector(wanted || defaultSector);
-  const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
-  const products = curated(sector).slice(0, 50);
-  return Response.json(
-    { ok: true, supplier: "gelato", sector, query: sector, products, count: products.length, source: "gelato-selected-primary", markets: ["NO", "EU", "PE"] },
-    { status: products.length ? 200 : 503, headers }
+
+function estimateRetail(catalogUid: string) {
+  const c = String(catalogUid || "").toLowerCase();
+  if (c.includes("mug")) return { cost: 6.5, retail: 18.9 };
+  if (c.includes("tote")) return { cost: 7.1, retail: 22.5 };
+  if (c.includes("poster") || c.includes("canvas")) return { cost: 8.2, retail: 24.9 };
+  if (c.includes("phone") || c.includes("case")) return { cost: 8.8, retail: 24.9 };
+  if (c.includes("pillow")) return { cost: 11, retail: 32.9 };
+  if (c.includes("apparel") || c.includes("shirt") || c.includes("hoodie")) return { cost: 9.4, retail: 29.9 };
+  return { cost: 9, retail: 26.9 };
+}
+
+function normalizeCatalogProduct(product: any, index: number, sector: string, catalogUid: string) {
+  const uid = String(product?.productUid || product?.id || `gelato-${index}`);
+  const prices = estimateRetail(catalogUid);
+  const retail = money(product?.price?.basePrice ?? product?.price?.amount ?? product?.price) || prices.retail;
+  const cost = money(product?.cost ?? product?.supplierPrice) || prices.cost;
+  return {
+    id: uid,
+    sku: uid.slice(0, 48),
+    supplier: "Gelato",
+    provider: "gelato",
+    gelatoProductUid: uid,
+    name: prettyTitle(uid, catalogUid, product),
+    category: String(product?.category || catalogUid || sector),
+    brand: "Gelato",
+    supplierPriceUsd: cost,
+    suggestedRetailUsd: retail,
+    image: String(product?.previewUrl || product?.imageUrl || product?.thumbnailUrl || product?.image || ""),
+    sector,
+    catalogUid,
+    compliance: "EU/Nordic POD merch only — apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims",
+  };
+}
+
+function normalizeEcom(product: any, index: number, sector: string) {
+  const retail = money(
+    product?.price?.basePrice ?? product?.price?.amount ?? product?.price ?? product?.suggestedRetailUsd ?? product?.retailPrice
   );
+  return {
+    id: String(product?.id || product?.productUid || `gelato-ecom-${index}`),
+    sku: String(product?.sku || product?.productUid || product?.id || ""),
+    supplier: "Gelato",
+    provider: "gelato",
+    gelatoProductUid: String(product?.productUid || product?.id || ""),
+    name: String(product?.title || product?.name || "Gelato product"),
+    category: String(product?.category || sector),
+    brand: "Gelato",
+    supplierPriceUsd: retail,
+    suggestedRetailUsd: retail,
+    image: String(product?.previewUrl || product?.imageUrl || product?.image || product?.thumbnailUrl || ""),
+    sector,
+    compliance: "EU/Nordic POD merch only — apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims",
+  };
+}
+
+async function listCatalogUids(headers: Record<string, string>) {
+  const response = await fetch(`${PRODUCT_BASE}/v3/catalogs`, { headers });
+  if (!response.ok) return [] as string[];
+  const result: any = await response.json().catch(() => []);
+  const list = Array.isArray(result) ? result : Array.isArray(result?.catalogs) ? result.catalogs : [];
+  return list.map((c: any) => String(c?.catalogUid || c?.uid || c?.id || "")).filter(Boolean);
+}
+
+async function searchCatalog(headers: Record<string, string>, catalogUid: string, limit: number) {
+  const response = await fetch(`${PRODUCT_BASE}/v3/catalogs/${encodeURIComponent(catalogUid)}/products:search`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ offset: 0, limit }),
+  });
+  if (!response.ok) return [] as any[];
+  const result: any = await response.json().catch(() => ({}));
+  if (Array.isArray(result?.products)) return result.products;
+  if (Array.isArray(result)) return result;
+  return [];
+}
+
+async function loadStoreProducts(headers: Record<string, string>, storeId: string, sector: string) {
+  const url = new URL(`${ECOM_BASE}/v1/stores/${storeId}/products`);
+  url.searchParams.set("limit", "100");
+  url.searchParams.set("offset", "0");
+  const response = await fetch(url.toString(), { headers });
+  if (!response.ok) return [] as any[];
+  const result: any = await response.json().catch(() => ({}));
+  const list = Array.isArray(result?.products) ? result.products : Array.isArray(result) ? result : [];
+  return list.map((p: any, i: number) => normalizeEcom(p, i, sector)).filter((p: any) => p.name && p.suggestedRetailUsd > 0);
+}
+
+async function loadCatalogProducts(headers: Record<string, string>, sector: string) {
+  const available = await listCatalogUids(headers);
+  const preferred = SECTOR_CATALOGS[sector] || SECTOR_CATALOGS.beauty;
+  const ordered = [
+    ...preferred.filter((c) => !available.length || available.includes(c)),
+    ...available.filter((c) => !preferred.includes(c)),
+    ...FALLBACK_CATALOGS.filter((c) => !preferred.includes(c) && !available.includes(c)),
+  ];
+  const uniqueCatalogs = [...new Set(ordered)];
+  const seen = new Set<string>();
+  const out: any[] = [];
+  for (const catalogUid of uniqueCatalogs) {
+    if (out.length >= 50) break;
+    const need = Math.min(25, 50 - out.length);
+    const products = await searchCatalog(headers, catalogUid, need + 5);
+    for (const product of products) {
+      const item = normalizeCatalogProduct(product, out.length, sector, catalogUid);
+      if (!item.id || seen.has(item.id)) continue;
+      seen.add(item.id);
+      out.push(item);
+      if (out.length >= 50) break;
+    }
+  }
+  return out.slice(0, 50);
+}
+
+async function onRequestGet(context: any) {
+  const url = new URL(context.request.url);
+  const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
+  const sector = resolveSector(wanted || "beauty");
+  const headersOut = { "access-control-allow-origin": "*", "cache-control": "public, max-age=300" };
+  const apiKey = context.env.GELATO_API_KEY;
+  if (!apiKey) {
+    return Response.json({ error: "Gelato is not configured", products: [], supplier: "Gelato", sector, source: "gelato-unconfigured" }, { status: 503, headers: headersOut });
+  }
+  const headers = { "X-API-KEY": String(apiKey), "content-type": "application/json", "User-Agent": "NordicStore/1.0" };
+
+  try {
+    let storeId = context.env.GELATO_STORE_ID ? String(context.env.GELATO_STORE_ID) : "";
+    if (!storeId) {
+      const storesRes = await fetch(`${ECOM_BASE}/v1/stores`, { headers });
+      if (storesRes.ok) {
+        const stores: any = await storesRes.json().catch(() => ({}));
+        const list = Array.isArray(stores?.stores) ? stores.stores : Array.isArray(stores) ? stores : [];
+        storeId = String(list[0]?.id || list[0]?.storeId || "");
+      }
+    }
+    if (storeId) {
+      const storeProducts = await loadStoreProducts(headers, storeId, sector);
+      if (storeProducts.length >= 8) {
+        return Response.json({
+          ok: true,
+          supplier: "Gelato",
+          sector,
+          query: sector,
+          products: storeProducts.slice(0, 50),
+          count: Math.min(storeProducts.length, 50),
+          source: "gelato-live-store",
+          storeId,
+          markets: ["NO", "EU", "PE"],
+          compliance: "EU/Nordic POD merch",
+        }, { headers: headersOut });
+      }
+    }
+
+    const catalog = await loadCatalogProducts(headers, sector);
+    return Response.json({
+      ok: true,
+      supplier: "Gelato",
+      sector,
+      query: sector,
+      products: catalog,
+      count: catalog.length,
+      source: "gelato-live-catalog",
+      markets: ["NO", "EU", "PE"],
+      compliance: "EU/Nordic POD merch",
+    }, { status: catalog.length ? 200 : 503, headers: headersOut });
+  } catch (error) {
+    return Response.json({
+      error: error instanceof Error ? error.message : "Gelato request failed",
+      products: [],
+      supplier: "Gelato",
+      sector,
+      source: "gelato-error",
+    }, { status: 502, headers: headersOut });
+  }
+}
+
+
+export default async (req: Request) => {
+  if (req.method !== "GET") return Response.json({ error: "Method not allowed" }, { status: 405 });
+  return onRequestGet({
+    request: req,
+    env: { GELATO_API_KEY: Netlify.env.get("GELATO_API_KEY"), GELATO_STORE_ID: Netlify.env.get("GELATO_STORE_ID") },
+  });
 };
 export const config = { path: "/api/gelato-products" };
