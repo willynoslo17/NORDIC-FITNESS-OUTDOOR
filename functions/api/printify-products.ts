@@ -1,5 +1,4 @@
 const BASE = "https://api.printify.com/v1";
-
 const SELECTED: any[] = [
   {
     "id": "printify-fitness-1",
@@ -14,7 +13,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 49.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-2",
@@ -29,7 +29,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 52.9,
     "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-3",
@@ -44,7 +45,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 51.5,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-4",
@@ -59,7 +61,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 29.9,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-5",
@@ -74,7 +77,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 28.5,
     "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-6",
@@ -89,7 +93,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 27.9,
     "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-7",
@@ -104,7 +109,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 44.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-8",
@@ -119,7 +125,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 46.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-9",
@@ -134,7 +141,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 26.9,
     "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-10",
@@ -149,7 +157,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 54.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-11",
@@ -164,7 +173,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 43.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-12",
@@ -179,7 +189,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 25.9,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-13",
@@ -194,7 +205,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 53.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-14",
@@ -209,7 +221,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 27.5,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-15",
@@ -224,7 +237,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 45.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-16",
@@ -239,7 +253,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 54.5,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-17",
@@ -254,7 +269,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 28.5,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-18",
@@ -269,7 +285,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 46.5,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-19",
@@ -284,7 +301,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 55.9,
     "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-20",
@@ -299,7 +317,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 27.5,
     "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-21",
@@ -314,7 +333,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 47.9,
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-22",
@@ -329,7 +349,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 52.9,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "hoodie",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-23",
@@ -344,7 +365,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 26.5,
     "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-24",
@@ -359,7 +381,8 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 45.5,
     "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
     "matchType": "crewneck",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   },
   {
     "id": "printify-fitness-25",
@@ -374,10 +397,410 @@ const SELECTED: any[] = [
     "suggestedRetailUsd": 29.5,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
     "matchType": "tee",
-    "sector": "fitness"
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-26",
+    "sku": "PFY-FIT-HOODIE-SUMMIT2",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Summit Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-27",
+    "sku": "PFY-FIT-TEE-STEADY",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Steady Pace Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-28",
+    "sku": "PFY-FIT-CREW-DAWN",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Dawn Trail Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-29",
+    "sku": "PFY-FIT-HOODIE-RIDGE2",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Ridge Soft Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 55.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-30",
+    "sku": "PFY-FIT-TEE-MOVE",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Move Soft Daily Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-31",
+    "sku": "PFY-FIT-CREW-LAKE",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Lake Loop Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 47.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-32",
+    "sku": "PFY-FIT-HOODIE-WIND",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Wind Soft Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 53.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-33",
+    "sku": "PFY-FIT-TEE-EASY",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Easy Miles Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-34",
+    "sku": "PFY-FIT-CREW-TERRAIN",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Terrain Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 45.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-35",
+    "sku": "PFY-FIT-HOODIE-PATH",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Path Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 56.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-36",
+    "sku": "PFY-FIT-TEE-FRESH",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Fresh Air Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 29.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-37",
+    "sku": "PFY-FIT-CREW-CABIN",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Cabin Run Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 48.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-38",
+    "sku": "PFY-FIT-HOODIE-CLIMB",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Climb Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 52.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-39",
+    "sku": "PFY-FIT-TEE-WALK",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Long Walk Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 25.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-40",
+    "sku": "PFY-FIT-CREW-MIST",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Mist Morning Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 44.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-41",
+    "sku": "PFY-FIT-HOODIE-TRAILSOFT",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Trail Soft Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 57.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-42",
+    "sku": "PFY-FIT-TEE-STRONG",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Strong Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-43",
+    "sku": "PFY-FIT-CREW-PINE",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Pine Ridge Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 49.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-44",
+    "sku": "PFY-FIT-HOODIE-OPEN",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Open Road Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-45",
+    "sku": "PFY-FIT-TEE-PROGRESS",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Progress Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-46",
+    "sku": "PFY-FIT-CREW-HARBOR",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Harbor Run Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-47",
+    "sku": "PFY-FIT-HOODIE-ASCENT",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Ascent Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 55.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-48",
+    "sku": "PFY-FIT-TEE-CLEAR",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Clear Day Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-49",
+    "sku": "PFY-FIT-CREW-HORIZON",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Soft Horizon Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 47.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
+  },
+  {
+    "id": "printify-fitness-50",
+    "sku": "PFY-FIT-HOODIE-MILES2",
+    "supplier": "Printify",
+    "provider": "printify",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Miles Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 58.5,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness",
+    "compliance": "EU/Nordic POD merch only \u2014 apparel/poster/mug/tote/case/cap; no cosmetics liquids, no toy CE claims, no health claims"
   }
 ];
-
 const SECTOR_ALIASES: Record<string, string> = {
   "beauty": "beauty",
   "perfume": "beauty",
@@ -407,12 +830,10 @@ const SECTOR_ALIASES: Record<string, string> = {
   "auto": "car accessories",
   "automotive": "car accessories"
 };
-
 function money(value: unknown) {
   const amount = Number(value);
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
-
 function resolveSector(raw: string) {
   const key = String(raw || "").toLowerCase().trim();
   if (!key) return SELECTED[0]?.sector || "beauty";
@@ -422,7 +843,6 @@ function resolveSector(raw: string) {
   }
   return key;
 }
-
 function curated(sector: string) {
   return SELECTED
     .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
@@ -440,21 +860,18 @@ function curated(sector: string) {
       image: String(p.image || ""),
       matchType: String(p.matchType || ""),
       sector: String(p.sector || sector),
+      compliance: String(p.compliance || "EU/Nordic POD merch"),
     }))
     .filter((p) => p.suggestedRetailUsd > 0 && p.name);
 }
-
 function haystack(p: any) {
   return [p.name, p.title, p.category, ...(Array.isArray(p.tags) ? p.tags : []), p.sku].join(" ").toLowerCase();
 }
-
 async function enrichFromLive(token: string, shopId: string, curatedProducts: any[]) {
   try {
     const apiUrl = new URL(BASE + `/shops/${shopId}/products.json`);
     apiUrl.searchParams.set("limit", "50");
-    const response = await fetch(apiUrl, {
-      headers: { Authorization: `Bearer ${token}`, "User-Agent": "NordicStore/1.0" },
-    });
+    const response = await fetch(apiUrl, { headers: { Authorization: `Bearer ${token}`, "User-Agent": "NordicStore/1.0" } });
     if (!response.ok) return curatedProducts;
     const result: any = await response.json();
     const list = Array.isArray(result?.data) ? result.data : Array.isArray(result) ? result : [];
@@ -491,25 +908,20 @@ async function enrichFromLive(token: string, shopId: string, curatedProducts: an
         enriched: true,
       };
     });
-  } catch (_) {
-    return curatedProducts;
-  }
+  } catch (_) { return curatedProducts; }
 }
-
 export async function onRequestGet(context: any) {
   const url = new URL(context.request.url);
   const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
   const defaultSector = String(SELECTED[0]?.sector || "beauty");
   const sector = resolveSector(wanted || defaultSector);
   const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
-  let products = curated(sector).slice(0, 30);
+  let products = curated(sector).slice(0, 50);
   const token = context.env.PRINTIFY_API_TOKEN;
   const shopId = context.env.PRINTIFY_SHOP_ID || "28847802";
-  if (token && products.length) {
-    products = await enrichFromLive(String(token), String(shopId), products);
-  }
+  if (token && products.length) products = await enrichFromLive(String(token), String(shopId), products);
   return Response.json(
-    { ok: true, supplier: "printify", sector, query: sector, products, count: products.length, source: "printify-selected-primary", markets: ["NO", "EU", "PE"] },
+    { ok: true, supplier: "printify", sector, query: sector, products, count: products.length, source: "printify-selected-primary", compliance: "EU/Nordic POD merch", markets: ["NO", "EU", "PE"] },
     { status: products.length ? 200 : 503, headers }
   );
 }
