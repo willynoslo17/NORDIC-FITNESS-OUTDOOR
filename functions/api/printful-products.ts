@@ -1,94 +1,259 @@
-const BASE = "https://api.printful.com";
+const SELECTED: any[] = [
+  {
+    "id": "printful-fitness-1",
+    "sku": "PFL-FIT-HOODIE-OUTDOOR",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Outdoor Club Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 49.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-2",
+    "sku": "PFL-FIT-HOODIE-TRAIL",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Trail Ready Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 52.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-3",
+    "sku": "PFL-FIT-HOODIE-PR",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "PR Mode Zip Hoodie",
+    "category": "Training",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 51.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-4",
+    "sku": "PFL-FIT-TEE-TRAIL",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Trail Ready Unisex Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 29.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-5",
+    "sku": "PFL-FIT-TEE-LEGS",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Never Skip Leg Day Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.5,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-6",
+    "sku": "PFL-FIT-TEE-FJELL",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Fjell Runner Soft Tee",
+    "category": "Outdoor",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.9,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-7",
+    "sku": "PFL-FIT-CREW-SUNRISE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Sunrise Session Crewneck",
+    "category": "Apparel",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 44.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-8",
+    "sku": "PFL-FIT-CREW-MILES",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Miles Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-9",
+    "sku": "PFL-FIT-TEE-PLUNGE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Cold Plunge Club Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-10",
+    "sku": "PFL-FIT-HOODIE-SUMMIT",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Summit Seekers Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-11",
+    "sku": "PFL-FIT-CREW-RECOVERY",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Recovery Day Crewneck",
+    "category": "Training",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 43.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-12",
+    "sku": "PFL-FIT-TEE-HYDRATE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Hydrate & Elevate Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 25.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-13",
+    "sku": "PFL-FIT-HOODIE-BASE",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Base Camp Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 53.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-14",
+    "sku": "PFL-FIT-TEE-TEMPO",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Tempo Run Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "printful-fitness-15",
+    "sku": "PFL-FIT-CREW-FJORD",
+    "supplier": "Printful",
+    "provider": "printful",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Fjord Miles Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 45.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  }
+];
 
-const SECTOR_KEYWORDS: Record<string, string[]> = {
-  "beauty": [
-    "beauty",
-    "perfume",
-    "skincare",
-    "cosmetic",
-    "glow",
-    "tote",
-    "t-shirt",
-    "tee",
-    "mug",
-    "crewneck"
-  ],
-  "toys": [
-    "toy",
-    "kid",
-    "kids",
-    "child",
-    "poster",
-    "t-shirt",
-    "tee",
-    "educational",
-    "abc"
-  ],
-  "electronics": [
-    "tech",
-    "electronic",
-    "phone",
-    "case",
-    "tough",
-    "gadget",
-    "circuit",
-    "debug"
-  ],
-  "pet supplies": [
-    "pet",
-    "dog",
-    "cat",
-    "paw",
-    "tote",
-    "t-shirt",
-    "tee",
-    "animal"
-  ],
-  "home living": [
-    "home",
-    "living",
-    "decor",
-    "hygge",
-    "tote",
-    "poster",
-    "mug",
-    "kitchen",
-    "pillow"
-  ],
-  "fitness": [
-    "fitness",
-    "outdoor",
-    "trail",
-    "sport",
-    "hoodie",
-    "zip",
-    "t-shirt",
-    "tee",
-    "crewneck",
-    "gym"
-  ],
-  "solar energy": [
-    "solar",
-    "energy",
-    "watt",
-    "green",
-    "tote",
-    "poster",
-    "clean",
-    "eco"
-  ],
-  "car accessories": [
-    "car",
-    "auto",
-    "driver",
-    "garage",
-    "cap",
-    "hat",
-    "hoodie",
-    "zip",
-    "mobility",
-    "route"
-  ]
+const SECTOR_ALIASES: Record<string, string> = {
+  "beauty": "beauty",
+  "perfume": "beauty",
+  "perfumes": "beauty",
+  "skincare": "beauty",
+  "toys": "toys",
+  "kids": "toys",
+  "kid": "toys",
+  "children": "toys",
+  "electronics": "electronics",
+  "tech": "electronics",
+  "technology": "electronics",
+  "pet supplies": "pet supplies",
+  "pets": "pet supplies",
+  "pet": "pet supplies",
+  "home living": "home living",
+  "home": "home living",
+  "living": "home living",
+  "fitness": "fitness",
+  "outdoor": "fitness",
+  "sports": "fitness",
+  "solar energy": "solar energy",
+  "energy": "solar energy",
+  "solar": "solar energy",
+  "car accessories": "car accessories",
+  "car": "car accessories",
+  "auto": "car accessories",
+  "automotive": "car accessories"
 };
 
 function money(value: unknown) {
@@ -96,80 +261,52 @@ function money(value: unknown) {
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
 
-function normalize(row: any, index: number) {
-  const sync = row?.sync_product || row;
-  const retail = money(sync?.retail_price || row?.retail_price);
-  return {
-    id: String(sync?.id || `printful-${index}`),
-    sku: String(sync?.external_id || sync?.id || ""),
-    supplier: "Printful",
-    provider: "printful",
-    name: String(sync?.name || "Printful product"),
-    category: "Printful",
-    supplierPriceUsd: retail,
-    suggestedRetailUsd: retail,
-    image: String(sync?.thumbnail_url || sync?.image || ""),
-  };
+function resolveSector(raw: string) {
+  const key = String(raw || "").toLowerCase().trim();
+  if (!key) return SELECTED[0]?.sector || "beauty";
+  if (SECTOR_ALIASES[key]) return SECTOR_ALIASES[key];
+  for (const [alias, sector] of Object.entries(SECTOR_ALIASES)) {
+    if (key.includes(alias) || alias.includes(key)) return sector;
+  }
+  return key;
 }
 
-function matchesSector(p: any, sector: string) {
-  const keys = SECTOR_KEYWORDS[sector] || SECTOR_KEYWORDS.beauty;
-  const text = [p.name, p.category, p.sku].join(" ").toLowerCase();
-  return keys.some((k) => text.includes(k));
+function curated(sector: string) {
+  return SELECTED
+    .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
+    .map((p, i) => ({
+      id: String(p.id || `printful-selected-${i}`),
+      sku: String(p.sku || ""),
+      supplier: "Printful",
+      provider: "printful",
+      name: String(p.name || "Printful product"),
+      category: String(p.category || sector),
+      supplierPriceUsd: money(p.supplierPriceUsd) || money(p.suggestedRetailUsd),
+      suggestedRetailUsd: money(p.suggestedRetailUsd) || money(p.supplierPriceUsd),
+      image: String(p.image || ""),
+      sector: String(p.sector || sector),
+    }))
+    .filter((p) => p.suggestedRetailUsd > 0 && p.name);
 }
 
 export async function onRequestGet(context: any) {
-  const token = context.env.PRINTFUL_API_TOKEN;
-  const reqUrl = new URL(context.request.url);
-  const wanted = (reqUrl.searchParams.get("q") || reqUrl.searchParams.get("sector") || "beauty").toLowerCase().trim();
-  const sector = SECTOR_KEYWORDS[wanted] ? wanted : "beauty";
-  const headersOut = { "access-control-allow-origin": "*", "cache-control": "public, max-age=300" };
-  if (!token) return Response.json({ error: "Printful is not configured", products: [], sector, query: sector }, { status: 503, headers: headersOut });
-  try {
-    const headers: Record<string, string> = { Authorization: `Bearer ${token}` };
-    if (context.env.PRINTFUL_STORE_ID) headers["X-PF-Store-Id"] = String(context.env.PRINTFUL_STORE_ID);
-    const url = new URL(BASE + "/store/products");
-    url.searchParams.set("limit", "20");
-    url.searchParams.set("offset", "0");
-    const response = await fetch(url, { headers });
-    const result: any = await response.json();
-    if (!response.ok) {
-      return Response.json({ error: result?.error?.message || result?.result || "Printful product request failed", products: [] }, { status: 502, headers: headersOut });
-    }
-    const list = Array.isArray(result?.result) ? result.result : [];
-    let products = list.map(normalize).filter((p: any) => p.name);
-    const detailed = [];
-    for (const product of products.slice(0, 20)) {
-      try {
-        const detailRes = await fetch(`${BASE}/store/products/${product.id}`, { headers });
-        const detail: any = await detailRes.json();
-        if (!detailRes.ok) { detailed.push(product); continue; }
-        const variants = Array.isArray(detail?.result?.sync_variants) ? detail.result.sync_variants : [];
-        const priced = variants.find((v: any) => money(v?.retail_price) > 0) || variants[0];
-        const retail = money(priced?.retail_price);
-        detailed.push({
-          ...product,
-          sku: String(priced?.sku || product.sku || ""),
-          supplierPriceUsd: retail || product.supplierPriceUsd,
-          suggestedRetailUsd: retail || product.suggestedRetailUsd,
-          image: product.image || String(priced?.files?.find?.((f: any) => f?.type === "preview")?.preview_url || ""),
-        });
-      } catch (_) {
-        detailed.push(product);
-      }
-    }
-    let out = detailed.filter((p: any) => p.suggestedRetailUsd > 0);
-    const filtered = out.filter((p) => matchesSector(p, sector));
-    if (filtered.length >= 1) out = filtered;
-    return Response.json({
+  const url = new URL(context.request.url);
+  const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
+  const defaultSector = String(SELECTED[0]?.sector || "beauty");
+  const sector = resolveSector(wanted || defaultSector);
+  const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
+  const products = curated(sector).slice(0, 30);
+  return Response.json(
+    {
       ok: true,
       supplier: "printful",
       sector,
       query: sector,
-      products: out.slice(0, 30),
+      products,
+      count: products.length,
+      source: "printful-selected-primary",
       markets: ["NO", "EU", "PE"],
-    }, { headers: headersOut });
-  } catch (error) {
-    return Response.json({ error: error instanceof Error ? error.message : "Printful request failed", products: [] }, { status: 502, headers: headersOut });
-  }
+    },
+    { status: products.length ? 200 : 503, headers }
+  );
 }

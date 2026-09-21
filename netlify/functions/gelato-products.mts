@@ -1,95 +1,259 @@
-const PRODUCT_BASE = "https://product.gelatoapis.com";
-const ECOM_BASE = "https://ecommerce.gelatoapis.com";
+const SELECTED: any[] = [
+  {
+    "id": "gelato-fitness-1",
+    "sku": "GEL-FIT-HOODIE-OUTDOOR",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Outdoor Club Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 49.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-2",
+    "sku": "GEL-FIT-HOODIE-TRAIL",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Trail Ready Zip Hoodie",
+    "category": "Apparel",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 52.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-3",
+    "sku": "GEL-FIT-HOODIE-PR",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "PR Mode Zip Hoodie",
+    "category": "Training",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 51.5,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-4",
+    "sku": "GEL-FIT-TEE-TRAIL",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Trail Ready Unisex Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 29.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-5",
+    "sku": "GEL-FIT-TEE-LEGS",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Never Skip Leg Day Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 28.5,
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-6",
+    "sku": "GEL-FIT-TEE-FJELL",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Fjell Runner Soft Tee",
+    "category": "Outdoor",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.9,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-7",
+    "sku": "GEL-FIT-CREW-SUNRISE",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Sunrise Session Crewneck",
+    "category": "Apparel",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 44.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-8",
+    "sku": "GEL-FIT-CREW-MILES",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Nordic Miles Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 46.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-9",
+    "sku": "GEL-FIT-TEE-PLUNGE",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Cold Plunge Club Tee",
+    "category": "Training",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 26.9,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-10",
+    "sku": "GEL-FIT-HOODIE-SUMMIT",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Summit Seekers Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 54.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-11",
+    "sku": "GEL-FIT-CREW-RECOVERY",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Recovery Day Crewneck",
+    "category": "Training",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 43.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-12",
+    "sku": "GEL-FIT-TEE-HYDRATE",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Hydrate & Elevate Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 25.9,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-13",
+    "sku": "GEL-FIT-HOODIE-BASE",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Base Camp Zip Hoodie",
+    "category": "Outdoor",
+    "supplierPriceUsd": 18.5,
+    "suggestedRetailUsd": 53.9,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+    "matchType": "hoodie",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-14",
+    "sku": "GEL-FIT-TEE-TEMPO",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Tempo Run Soft Tee",
+    "category": "Apparel",
+    "supplierPriceUsd": 9.4,
+    "suggestedRetailUsd": 27.5,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "matchType": "tee",
+    "sector": "fitness"
+  },
+  {
+    "id": "gelato-fitness-15",
+    "sku": "GEL-FIT-CREW-FJORD",
+    "supplier": "Gelato",
+    "provider": "gelato",
+    "printifyProductId": "",
+    "printifyVariantId": "",
+    "name": "Fjord Miles Crewneck",
+    "category": "Outdoor",
+    "supplierPriceUsd": 16.5,
+    "suggestedRetailUsd": 45.9,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80",
+    "matchType": "crewneck",
+    "sector": "fitness"
+  }
+];
 
-const SECTOR_KEYWORDS: Record<string, string[]> = {
-  "beauty": [
-    "beauty",
-    "perfume",
-    "skincare",
-    "cosmetic",
-    "glow",
-    "tote",
-    "t-shirt",
-    "tee",
-    "mug",
-    "crewneck"
-  ],
-  "toys": [
-    "toy",
-    "kid",
-    "kids",
-    "child",
-    "poster",
-    "t-shirt",
-    "tee",
-    "educational",
-    "abc"
-  ],
-  "electronics": [
-    "tech",
-    "electronic",
-    "phone",
-    "case",
-    "tough",
-    "gadget",
-    "circuit",
-    "debug"
-  ],
-  "pet supplies": [
-    "pet",
-    "dog",
-    "cat",
-    "paw",
-    "tote",
-    "t-shirt",
-    "tee",
-    "animal"
-  ],
-  "home living": [
-    "home",
-    "living",
-    "decor",
-    "hygge",
-    "tote",
-    "poster",
-    "mug",
-    "kitchen",
-    "pillow"
-  ],
-  "fitness": [
-    "fitness",
-    "outdoor",
-    "trail",
-    "sport",
-    "hoodie",
-    "zip",
-    "t-shirt",
-    "tee",
-    "crewneck",
-    "gym"
-  ],
-  "solar energy": [
-    "solar",
-    "energy",
-    "watt",
-    "green",
-    "tote",
-    "poster",
-    "clean",
-    "eco"
-  ],
-  "car accessories": [
-    "car",
-    "auto",
-    "driver",
-    "garage",
-    "cap",
-    "hat",
-    "hoodie",
-    "zip",
-    "mobility",
-    "route"
-  ]
+const SECTOR_ALIASES: Record<string, string> = {
+  "beauty": "beauty",
+  "perfume": "beauty",
+  "perfumes": "beauty",
+  "skincare": "beauty",
+  "toys": "toys",
+  "kids": "toys",
+  "kid": "toys",
+  "children": "toys",
+  "electronics": "electronics",
+  "tech": "electronics",
+  "technology": "electronics",
+  "pet supplies": "pet supplies",
+  "pets": "pet supplies",
+  "pet": "pet supplies",
+  "home living": "home living",
+  "home": "home living",
+  "living": "home living",
+  "fitness": "fitness",
+  "outdoor": "fitness",
+  "sports": "fitness",
+  "solar energy": "solar energy",
+  "energy": "solar energy",
+  "solar": "solar energy",
+  "car accessories": "car accessories",
+  "car": "car accessories",
+  "auto": "car accessories",
+  "automotive": "car accessories"
 };
 
 function money(value: unknown) {
@@ -97,79 +261,54 @@ function money(value: unknown) {
   return Number.isFinite(amount) && amount > 0 ? Math.round(amount * 100) / 100 : 0;
 }
 
-function normalizeEcom(product: any, index: number) {
-  const retail = money(
-    product?.price?.basePrice ?? product?.price?.amount ?? product?.price ?? product?.suggestedRetailUsd ?? product?.retailPrice
-  );
-  return {
-    id: String(product?.id || product?.productUid || `gelato-${index}`),
-    sku: String(product?.sku || product?.productUid || product?.id || ""),
-    supplier: "Gelato",
-    provider: "gelato",
-    name: String(product?.title || product?.name || "Gelato product"),
-    category: String(product?.category || "Gelato"),
-    supplierPriceUsd: retail,
-    suggestedRetailUsd: retail,
-    image: String(product?.previewUrl || product?.imageUrl || product?.image || product?.thumbnailUrl || ""),
-  };
+function resolveSector(raw: string) {
+  const key = String(raw || "").toLowerCase().trim();
+  if (!key) return SELECTED[0]?.sector || "beauty";
+  if (SECTOR_ALIASES[key]) return SECTOR_ALIASES[key];
+  for (const [alias, sector] of Object.entries(SECTOR_ALIASES)) {
+    if (key.includes(alias) || alias.includes(key)) return sector;
+  }
+  return key;
 }
 
-function matchesSector(p: any, sector: string) {
-  const keys = SECTOR_KEYWORDS[sector] || SECTOR_KEYWORDS.beauty;
-  const text = [p.name, p.category, p.sku].join(" ").toLowerCase();
-  return keys.some((k) => text.includes(k));
+function curated(sector: string) {
+  return SELECTED
+    .filter((p) => !p.sector || String(p.sector).toLowerCase() === sector)
+    .map((p, i) => ({
+      id: String(p.id || `gelato-selected-${i}`),
+      sku: String(p.sku || ""),
+      supplier: "Gelato",
+      provider: "gelato",
+      name: String(p.name || "Gelato product"),
+      category: String(p.category || sector),
+      supplierPriceUsd: money(p.supplierPriceUsd) || money(p.suggestedRetailUsd),
+      suggestedRetailUsd: money(p.suggestedRetailUsd) || money(p.supplierPriceUsd),
+      image: String(p.image || ""),
+      sector: String(p.sector || sector),
+    }))
+    .filter((p) => p.suggestedRetailUsd > 0 && p.name);
 }
 
-async function loadStoreProducts(headers: Record<string, string>, storeId: string) {
-  const response = await fetch(`${ECOM_BASE}/v1/stores/${storeId}/products`, { headers });
-  const result: any = await response.json().catch(() => ({}));
-  if (!response.ok) return [];
-  const list = Array.isArray(result?.products) ? result.products : Array.isArray(result) ? result : [];
-  return list.map(normalizeEcom).filter((p: any) => p.suggestedRetailUsd > 0);
-}
-
-export default async (req: Request) => {
+export default async (req: Request, context: any) => {
   if (req.method !== "GET") return Response.json({ error: "Method not allowed" }, { status: 405 });
-  const apiKey = Netlify.env.get("GELATO_API_KEY");
   const url = new URL(req.url);
-  const wanted = (url.searchParams.get("q") || url.searchParams.get("sector") || "beauty").toLowerCase().trim();
-  const sector = SECTOR_KEYWORDS[wanted] ? wanted : "beauty";
-  const headersOut = { "access-control-allow-origin": "*", "cache-control": "public, max-age=300" };
-  if (!apiKey) return Response.json({ error: "Gelato is not configured", products: [], sector, query: sector }, { status: 503, headers: headersOut });
-  const headers = { "X-API-KEY": apiKey, "content-type": "application/json" };
-  try {
-    let storeId = Netlify.env.get("GELATO_STORE_ID") || "";
-    if (!storeId) {
-      const storesRes = await fetch(`${ECOM_BASE}/v1/stores`, { headers });
-      if (storesRes.ok) {
-        const stores: any = await storesRes.json();
-        const list = Array.isArray(stores?.stores) ? stores.stores : Array.isArray(stores) ? stores : [];
-        storeId = String(list[0]?.id || list[0]?.storeId || "");
-      }
-    }
-    if (storeId) {
-      let products = await loadStoreProducts(headers, storeId);
-      const filtered = products.filter((p) => matchesSector(p, sector));
-      if (filtered.length >= 1) products = filtered;
-      products = products.slice(0, 30);
-      return Response.json({ ok: true, supplier: "gelato", sector, query: sector, products, storeId, markets: ["NO", "EU", "PE"] }, { headers: headersOut });
-    }
-    const catalogsRes = await fetch(`${PRODUCT_BASE}/v3/catalogs`, { headers });
-    if (!catalogsRes.ok) {
-      const err: any = await catalogsRes.json().catch(() => ({}));
-      return Response.json({ error: err?.message || "Gelato request failed", products: [] }, { status: 502, headers: headersOut });
-    }
-    return Response.json({
+  const wanted = url.searchParams.get("q") || url.searchParams.get("sector") || "";
+  const defaultSector = String(SELECTED[0]?.sector || "beauty");
+  const sector = resolveSector(wanted || defaultSector);
+  const headers = { "access-control-allow-origin": "*", "cache-control": "public, max-age=60" };
+  const products = curated(sector).slice(0, 30);
+  return Response.json(
+    {
       ok: true,
       supplier: "gelato",
       sector,
       query: sector,
-      products: [],
-      note: "API key valid. Add ecommerce store products in Gelato (or set GELATO_STORE_ID) for a live priced catalog.",
+      products,
+      count: products.length,
+      source: "gelato-selected-primary",
       markets: ["NO", "EU", "PE"],
-    }, { headers: headersOut });
-  } catch (error) {
-    return Response.json({ error: error instanceof Error ? error.message : "Gelato request failed", products: [] }, { status: 502, headers: headersOut });
-  }
+    },
+    { status: products.length ? 200 : 503, headers }
+  );
 };
 export const config = { path: "/api/gelato-products" };
