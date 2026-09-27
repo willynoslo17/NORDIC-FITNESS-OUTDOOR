@@ -1,4 +1,6 @@
-# Nordic Fitness & Outdoor
+# Fortenergi — Fitness & Outdoor
+
+Storefront brand: **Fortenergi** · https://fortenergi.no/ · Fortenergi er et varemerke fra ML Internasjonal. (Repo / Pages project: `NORDIC-FITNESS-OUTDOOR`, formerly "Nordic Fitness & Outdoor".)
 
 International storefront for Norway, Europe and Peru. Responsive catalog, market localization, cart, delivery options, test checkout and supplier-ready API endpoints.
 ## Direct commerce activation
