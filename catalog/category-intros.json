@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "no": "Treningsutstyr",
+      "es": "Equipamiento de entrenamiento",
+      "intro_no": "Når du velger treningsutstyr, bør du først kontrollere hvilke øvelser du vil gjøre og hvor mye plass du har. Sammenlign oppgitt vekt, mål og maksbelastning med behovene dine, og vurder om grep og underlag passer til treningen du planlegger. Se etter opplysninger om materiale, justering og bruksanvisning på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller.",
+      "intro_es": "Al elegir equipamiento de entrenamiento, revisa qué ejercicios quieres hacer y cuánto espacio tienes. Compara el peso, las medidas y la carga máxima indicados con lo que necesitas y considera si el agarre y la base se adaptan al entrenamiento previsto. Comprueba el material, el ajuste y las instrucciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar."
+    },
+    {
+      "no": "Strikk og mobilitet",
+      "es": "Bandas elásticas y movilidad",
+      "intro_no": "Når du velger strikk og mobilitetsutstyr, bør du først kontrollere hvilke øvelser og hvilket motstandsnivå du trenger. Sammenlign oppgitt lengde, motstand og materiale med behovene dine, og vurder om håndtak, løkker eller fester passer til bruken. Se etter opplysninger om vedlikehold, oppbevaring og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller.",
+      "intro_es": "Al elegir bandas elásticas y material de movilidad, revisa qué ejercicios y qué nivel de resistencia necesitas. Compara la longitud, la resistencia y el material indicados con lo que necesitas y considera si las asas, lazos o anclajes se adaptan al uso previsto. Comprueba el mantenimiento, el almacenamiento y las instrucciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar."
+    },
+    {
+      "no": "Yoga og pilates",
+      "es": "Yoga y pilates",
+      "intro_no": "Når du velger yoga- og pilatesutstyr, bør du først kontrollere hvor du skal trene og hvilke øvelser du gjør oftest. Sammenlign oppgitt tykkelse, mål og overflate med behovene dine, og vurder om materialet gir grepet og dempingen du ønsker. Se etter opplysninger om rengjøring, oppbevaring og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller.",
+      "intro_es": "Al elegir material de yoga y pilates, revisa dónde vas a practicar y qué ejercicios haces con más frecuencia. Compara el grosor, las medidas y la superficie indicados con lo que necesitas y considera si el material ofrece el agarre y la amortiguación que buscas. Comprueba la limpieza, el almacenamiento y las instrucciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar."
+    },
+    {
+      "no": "Tur og camping",
+      "es": "Senderismo y camping",
+      "intro_no": "Når du velger tur- og campingutstyr, bør du først kontrollere hvor lenge du skal være ute og hvilket vær du kan møte. Sammenlign oppgitt volum, vekt, pakkstørrelse og materiale med behovene dine, og vurder om utstyret passer til turene du planlegger. Se etter opplysninger om vanntetthet, maksvekt og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller.",
+      "intro_es": "Al elegir equipo de senderismo y camping, revisa cuánto tiempo estarás fuera y qué tiempo puedes encontrar. Compara el volumen, el peso, el tamaño plegado y el material indicados con lo que necesitas y considera si el equipo se adapta a las salidas que planeas. Comprueba la impermeabilidad, la carga máxima y las instrucciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar."
+    },
+    {
+      "no": "Løping og drikkeflasker",
+      "es": "Running e hidratación",
+      "intro_no": "Når du velger løpetilbehør og drikkeflasker, bør du først kontrollere hva du vil ha med og hvor lenge du er ute. Sammenlign oppgitte mål, volum og materiale med behovene dine, og vurder om passform og lukking fungerer under bevegelse. Se etter opplysninger om rengjøring, refleks og bruksinstruksjoner på produktsiden. Tenk gjennom hvor og hvordan produktet skal brukes; mål, materialer og kompatibilitet kan påvirke valget. Hvis en viktig opplysning mangler, kontakt butikken før du bestiller.",
+      "intro_es": "Al elegir accesorios de running y botellas, revisa qué quieres llevar y cuánto tiempo estarás fuera. Compara las medidas, el volumen y el material indicados con lo que necesitas y considera si el ajuste y el cierre funcionan en movimiento. Comprueba la limpieza, los elementos reflectantes y las instrucciones de uso. Las medidas, los materiales y la compatibilidad influyen en la elección. Si falta un dato importante, contacta con la tienda antes de comprar."
+    }
+  ]
+}
