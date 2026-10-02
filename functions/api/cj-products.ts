@@ -36,6 +36,11 @@ const CJ_FETCH_TIMEOUT_MS = 10000;
 type CachedCatalog = { at: number; payload: any | null };
 const memoryCatalog = new Map<string, CachedCatalog>();
 const inflight = new Map<string, Promise<CachedCatalog | null>>();
+/** When a shared refresh started; one that hangs (e.g. a CJ call that never settles) is replaced after REFRESH_STUCK_MS. */
+const inflightAt = new Map<string, number>();
+const REFRESH_STUCK_MS = 90 * 1000;
+/** A visitor without any cached copy waits at most this long for CJ; the refresh keeps running in the background. */
+const REFRESH_WAIT_MS = 25 * 1000;
 let tokenCache: { key: string; token: string; until: number } | null = null;
 
 type StoreProfile = {
@@ -413,6 +418,7 @@ async function viaFallback(query: string, page: number, headers: Record<string, 
   proxy.searchParams.set("curate", "1");
   const response = await fetch(proxy.toString(), {
     headers: { "user-agent": "Mozilla/5.0 nordic-cj-fallback" },
+    signal: AbortSignal.timeout(20000), // never let a slow fallback hold the visitor's request open
   });
   const fetched: any = await response.json().catch(() => null);
   if (!response.ok || !fetched?.ok) {
@@ -533,6 +539,7 @@ export async function onRequestGet(context: any) {
 
   let refreshError: unknown = null;
   let refresh = inflight.get(cacheKey);
+  if (refresh && Date.now() - (inflightAt.get(cacheKey) || 0) > REFRESH_STUCK_MS) refresh = undefined;
   if (!refresh) {
     refresh = (async () => {
       let auth = await getToken(apiKey);
@@ -551,8 +558,10 @@ export async function onRequestGet(context: any) {
       if (result.fetched && !cached?.payload) return writeCatalog(cacheKey, null);
       return null;
     })();
-    inflight.set(cacheKey, refresh);
-    refresh.finally(() => inflight.delete(cacheKey)).catch(() => {});
+    const mine = refresh;
+    inflight.set(cacheKey, mine);
+    inflightAt.set(cacheKey, Date.now());
+    mine.finally(() => { if (inflight.get(cacheKey) === mine) { inflight.delete(cacheKey); inflightAt.delete(cacheKey); } }).catch(() => {});
   }
   // Stale copy available: answer at once and let the refresh finish in the background (stale-while-revalidate).
   if (cached?.payload) {
@@ -561,7 +570,8 @@ export async function onRequestGet(context: any) {
   }
   let fresh: CachedCatalog | null = null;
   try {
-    fresh = await refresh;
+    if (typeof context.waitUntil === "function") context.waitUntil(refresh.catch(() => null));
+    fresh = await Promise.race([refresh, sleep(REFRESH_WAIT_MS).then(() => null)]);
   } catch (error) {
     refreshError = error;
   }
