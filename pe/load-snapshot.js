@@ -46,7 +46,16 @@
       .filter(Boolean)
       .filter((p) => /^(fitness|outdoor)$/i.test(String(p.cat || "")));
     window.nordicCatalogs = { cj: list, printify: [], gelato: [], printful: [] };
-    window.products = list;
+    /* Assign into the page's lexical `products` (let/var), not only window.products. */
+    try {
+      if (typeof products !== "undefined") {
+        products = list;
+      } else {
+        window.products = list;
+      }
+    } catch (_) {
+      window.products = list;
+    }
     window.nordicCatalogReady = true;
     window.nordicCatalogComplete = true;
     document.documentElement.setAttribute("data-catalog-status", "offline: pe-snapshot · " + list.length);
