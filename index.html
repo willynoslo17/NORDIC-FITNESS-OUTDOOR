@@ -306,14 +306,22 @@ const markets={NO:{currency:'NOK',rate:11.7,locale:'nb-NO',country:'Norway',deli
 let market='NO',filter='All',cart={},ship=0;
 const $=s=>document.querySelector(s);
 const money=n=>new Intl.NumberFormat(markets[market].locale,{style:'currency',currency:markets[market].currency,maximumFractionDigits:0}).format(n*markets[market].rate);
-function badgeFor(p){
+function badgeFor(p, featured){
+  const seen=new Set();
   const bits=[];
-  if(p.tag) bits.push(`<span class="badge">${p.tag}</span>`);
-  if(p.cat) bits.push(`<span class="badge accent">${p.cat}</span>`);
+  const push=(label, cls)=>{
+    const key=String(label||'').trim().toLowerCase();
+    if(!key||seen.has(key)) return;
+    seen.add(key);
+    bits.push(`<span class="badge${cls?` ${cls}`:''}">${label}</span>`);
+  };
+  if(featured) push('Toppvalg','accent');
+  if(p.cat) push(p.cat,'');
+  else if(p.tag) push(p.tag,'');
   return bits.length?`<div class="badges">${bits.join('')}</div>`:'';
 }
-function cardHTML(p){
-  return `<article class="product"><div class="price">${money(p.base)}</div><div class="visual">${p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':(p.cat||'Produkt')}</div><div class="productbody">${badgeFor(p)}<h3>${p.name}</h3><div class="delivery">Levering 5–20 virkedager</div><button class="add" type="button" onclick="add(${p.id})">Legg i handlekurven</button></div></article>`;
+function cardHTML(p, featured){
+  return `<article class="product"><div class="price">${money(p.base)}</div><div class="visual">${p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':(p.cat||'Produkt')}</div><div class="productbody">${badgeFor(p, featured)}<h3>${p.name}</h3><div class="delivery">Levering 5–20 virkedager</div><button class="add" type="button" onclick="add(${p.id})">Legg i handlekurven</button></div></article>`;
 }
 function renderFilters(){
   const cats=['All',...new Set(products.map(p=>p.cat).filter(c=>c&&!/['"<>\\]/.test(c)))];
@@ -324,11 +332,11 @@ function renderToppvalg(){
   const grid=$('#toppvalg-grid');
   if(!grid) return;
   const list=products.slice(0,4);
-  grid.innerHTML=list.length?list.map(cardHTML).join(''):'<p class="muted">Laster toppvalg…</p>';
+  grid.innerHTML=list.length?list.map(p=>cardHTML(p,true)).join(''):'<p class="muted">Laster toppvalg…</p>';
 }
 function renderProducts(){
   const list=products.filter(p=>filter==='All'||p.cat===filter);
-  $('#products').innerHTML=list.length?list.map(cardHTML).join(''):'<p class="muted">Produktene lastes inn. Vises ingenting, prøv igjen om litt.</p>';
+  $('#products').innerHTML=list.length?list.map(p=>cardHTML(p,false)).join(''):'<p class="muted">Produktene lastes inn. Vises ingenting, prøv igjen om litt.</p>';
   renderToppvalg();
 }
 function add(id){cart[id]=(cart[id]||0)+1;renderCart();openCart()}
